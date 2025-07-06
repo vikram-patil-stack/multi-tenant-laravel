@@ -9,8 +9,8 @@ A simple yet powerful multi-tenant application boilerplate for Laravel. Designed
 - ✅ **Dockerized Setup**: Rapid local development and deployment with Docker.
 - ✅ **Tenant Middleware**: Protects all routes by checking if a tenant is registered before access.
 - ✅ **Model Scoping by Tenant**: Models use a scope & trait to automatically add `tenant_id` to all queries and inserts.
-- **Session-based Tenant Context**: Tenant ID is stored in the session for easy access, with helper functions for convenience.
-- **Custom Tenant Registration Command**: Register a new tenant quickly with the `tenant:register` Artisan command.
+- ✅ **Session-based Tenant Context**: Tenant ID is stored in the session for easy access, with helper functions for convenience.
+- ✅ **Custom Tenant Registration Command**: Register a new tenant quickly with the `tenant:register` Artisan command.
 
 ## Quick Start
 
