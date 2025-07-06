@@ -29,6 +29,5 @@ trait MultiTenant
 
         static::addGlobalScope(new TenantScope());
     }
-    // static::addGlobalScope(new TenantScope());
 }
 ?>
