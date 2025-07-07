@@ -73,7 +73,7 @@ Feel free to fork, submit issues, or pull requests! Contributions are welcome.
 
 ## License
 
-This project is open source. See [LICENSE](LICENSE) for details.
+This project is open source.
 
 ---
 
