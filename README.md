@@ -5,7 +5,7 @@ A simple yet powerful multi-tenant application boilerplate for Laravel. Designed
 ## 🚀 Features
 
 - ✅ **Single Codebase & Database**: All tenants share the same code and DB, with robust tenant data isolation.
-- ✅ **UUIDv7 Primary Keys**: A custom trait ensures all models use UUIDv7 as their primary key.
+- ✅ **UUIDv7 Primary Keys**: A custom trait ensures all primary IDs are generated as UUIDv7 for scalability and uniqueness.
 - ✅ **Dockerized Setup**: Rapid local development and deployment with Docker.
 - ✅ **Tenant Middleware**: Protects all routes by checking if a tenant is registered before access.
 - ✅ **Model Scoping by Tenant**: Models use a scope & trait to automatically add `tenant_id` to all queries and inserts.
