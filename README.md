@@ -53,14 +53,14 @@ Visit `http://localhost` in your browser. Routes are protected by tenant middlew
 ## How It Works
 
 - **Tenant Identification**: Middleware checks for a valid registered tenant before allowing access to routes.
-- **Model Scoping**: Every model using the provided `MultiTenant` trait automatically includes `tenant_id` in insert and query operations.
+- **Model Scoping**: Every model using the provided `HasTenantScope` trait automatically includes `tenant_id` in insert and query operations.
 - **UUIDv7**: All primary IDs are generated as UUIDv7 for scalability and uniqueness.
 - **Session-Based Context**: The current `tenant_id` is stored in the session and can be quickly retrieved using provided helpers.
 
 ## Project Structure
 
 - `app/Traits/Uuid7.php` — Trait for UUIDv7 primary keys.
-- `app/Traits/MultiTenant.php` — Trait for model-level tenant scoping.
+- `app/Traits/HasTenantScope.php` — Trait for model-level tenant scoping.
 - `app/Models/Scope/TenantScope.php` — Scope file for query-level scoping.
 - `app/Http/Middleware/ValidateDomain.php` — Middleware to guard routes.
 - `app/Helpers/Tenant/TenantSession.php` — Helper functions for tenant context.
