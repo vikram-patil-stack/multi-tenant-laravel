@@ -12,6 +12,14 @@ A simple yet powerful multi-tenant application boilerplate for Laravel. Designed
 - ✅ **Session-based Tenant Context**: Tenant ID is stored in the session for easy access, with helper functions for convenience.
 - ✅ **Custom Tenant Registration Command**: Register a new tenant quickly with the `tenant:register` Artisan command.
 
+## 🛠️ Tech Stack
+
+- Laravel 12
+- PHP 8.4
+- Docker & Docker Compose
+- MySQL
+- UUIDv7 (via custom trait)
+
 ## Quick Start
 
 ### 1. Clone the repo

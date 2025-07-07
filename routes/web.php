@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TaskController;
 
 Route::get('/', function () {
-    dd('Welcome to the Multi-Tenant Application');
+    dd('Welcome to the Multi-Tenant Application Tenant Id : '. \App\Helpers\Tenant\TenantSession::getTenantId());
 });
 
 

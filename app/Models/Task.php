@@ -3,13 +3,13 @@
 namespace App\Models;
 
 use App\Traits\Uuid7;
-use App\Traits\MultiTenant;
+use App\Traits\HasTenantScope;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Task extends Model
 {
-    use SoftDeletes, Uuid7, MultiTenant;
+    use SoftDeletes, Uuid7, HasTenantScope;
 
     /**
      * The attributes that are mass assignable.

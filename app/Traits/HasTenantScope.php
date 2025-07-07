@@ -5,12 +5,12 @@ namespace App\Traits;
 use App\Models\Scopes\TenantScope;
 use App\Helpers\Tenant\TenantSession;
 
-trait MultiTenant
+trait HasTenantScope
 {
     /**
      * Boot the trait.
      */
-    public static function bootMultiTenant(): void
+    public static function bootHasTenantScope(): void
     {
         static::creating(function ($model) {
             if (empty($model->tenant_id)) {

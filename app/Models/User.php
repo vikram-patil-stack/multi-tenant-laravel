@@ -4,7 +4,7 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Traits\Uuid7;
-use App\Traits\MultiTenant;
+use App\Traits\HasTenantScope;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -13,7 +13,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable, SoftDeletes, Uuid7, MultiTenant;
+    use HasFactory, Notifiable, SoftDeletes, Uuid7, HasTenantScope;
 
     protected $keyType = 'string';
     
